@@ -1,0 +1,27 @@
+.boton-amarillo-block {
+  @include boton(
+    $amarillo,
+    block
+  ); //con la propiedad block enviada abarca todo el tamaño del container horizontalmente
+}
+
+.boton-amarillo {
+  @include boton($amarillo, inline-block);
+}
+
+.boton-verde {
+  @include boton($verde, inline-block);
+  margin-bottom: 2rem; //con la propiedad inline-block enviada abarca solo el tamaño del texto
+}
+
+.boton-rojo-block {
+  @include boton($rojo, block);
+  width: 100%;
+}
+.boton-verde-block {
+  @include boton($verde, block);
+}
+
+.w-100 {
+  width: 100%;
+}
